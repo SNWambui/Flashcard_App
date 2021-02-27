@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +13,10 @@
         android:layout_height="200dp"
         android:text="When did the Big Bang happen?"
         android:textSize="40sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:background="@drawable/card_background"
+        android:textColor="@color/black"/>
+
     <TextView
         android:id="@+id/flashcard_answer"
         android:layout_width="match_parent"
@@ -20,6 +24,59 @@
         android:text="13 billion years ago"
         android:visibility="invisible"
         android:gravity="center"
-        android:textSize="40sp"/>
+        android:textSize="40sp"
+        android:background="#8033FF"
+        android:textColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/first_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="13 Billion Years ago"
+        android:gravity="center"
+        android:layout_below="@id/flashcard_question"
+        android:layout_margin="10dp"
+        android:textSize="35sp"
+        android:padding="25dp"
+        android:background="#FF9F33"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/second_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.6 Billion Years ago"
+        android:gravity="center"
+        android:layout_below="@id/first_answer"
+        android:layout_margin="10dp"
+        android:textSize="35sp"
+        android:padding="25dp"
+        android:background="#FF9F33"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/third_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 Billion Years ago"
+        android:gravity="center"
+        android:layout_below="@id/second_answer"
+        android:layout_margin="10dp"
+        android:textSize="35sp"
+        android:padding="25dp"
+        android:background="#FF9F33"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/toggle_choices_visibility_hide"
+        android:src="@drawable/hide_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/toggle_choices_visibility"
+        android:src="@drawable/eye_show_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
