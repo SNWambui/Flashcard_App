@@ -6,9 +6,9 @@
 This is an flashcard app with questions and an answer meant to help students remember content taught in class
 
 ### App Walk-though
-**Version_1**
+**Version_1**<br>
 <img src="Lab1_Flashcard.gif" width=200><br>
-**Version_2**
+**Version_2**<br>
 <img src="Lab1_Flashcardv2.gif" width=200><br>
 
 ## Required
