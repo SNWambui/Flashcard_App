@@ -60,14 +60,31 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        ImageView showIcon = findViewById(R.id.toggle_choices_visibility_hide);
-        //ImageView hideIcon = findViewById(R.id.toggle_choices_visibility);
+        ImageView showIcon = findViewById(R.id.toggle_choices_visibility);
+        ImageView hideIcon = findViewById(R.id.toggle_choices_visibility_hide);
 
+        //when the show icon is clicked, make the answers visible
         showIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showIcon.setImageResource(R.drawable.eye_show_icon);
-                boolean isShowingAnswers;
+                showIcon.setVisibility(View.INVISIBLE);
+                hideIcon.setVisibility(View.VISIBLE);
+                firstAnswer.setVisibility(View.VISIBLE);
+                secondAnswer.setVisibility(View.VISIBLE);
+                thirdAnswer.setVisibility(View.VISIBLE);
+            }
+        });
+        //when the hide icon is clicked, make the answers not visible
+        hideIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showIcon.setImageResource(R.drawable.eye_show_icon);
+                showIcon.setVisibility(View.VISIBLE);
+                hideIcon.setVisibility(View.INVISIBLE);
+                firstAnswer.setVisibility(View.INVISIBLE);
+                secondAnswer.setVisibility(View.INVISIBLE);
+                thirdAnswer.setVisibility(View.INVISIBLE);
             }
         });
 
