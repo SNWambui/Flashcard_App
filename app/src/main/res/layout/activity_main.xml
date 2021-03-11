@@ -80,4 +80,12 @@
         android:src="@drawable/eye_show_icon"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/add_card_btn"
+        android:src="@drawable/add_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"/>
 </RelativeLayout>

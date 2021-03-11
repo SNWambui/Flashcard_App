@@ -2,6 +2,7 @@ package com.example.flashcard_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.View;
@@ -24,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 flashcardAnswer.setVisibility(View.VISIBLE);
                 flashcardQuestion.setVisibility(View.INVISIBLE);
             }
-        }
-        );
+        });
         //when the user clicks on the answer, the question is visible and the answer is not
         flashcardAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         TextView firstAnswer = findViewById(R.id.first_answer);
         TextView secondAnswer = findViewById(R.id.second_answer);
         TextView thirdAnswer = findViewById(R.id.third_answer);
+
+        //when the first answer is clicked, set the color to green
         firstAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //when the second answer is clicked, set the correct one as green and this one as red
         secondAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //when the third answer is clicked, set the correct one as green and this one as red
         thirdAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         showIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showIcon.setImageResource(R.drawable.eye_show_icon);
+                //showIcon.setImageResource(R.drawable.eye_show_icon);
                 showIcon.setVisibility(View.INVISIBLE);
                 hideIcon.setVisibility(View.VISIBLE);
                 firstAnswer.setVisibility(View.VISIBLE);
@@ -79,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         hideIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showIcon.setImageResource(R.drawable.eye_show_icon);
+                //showIcon.setImageResource(R.drawable.eye_show_icon);
                 showIcon.setVisibility(View.VISIBLE);
                 hideIcon.setVisibility(View.INVISIBLE);
                 firstAnswer.setVisibility(View.INVISIBLE);
@@ -88,5 +92,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView addCardIcon = findViewById(R.id.add_card_btn);
+
+        //when the add card icon is clicked, nagivate to the Add Card screen
+        addCardIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                MainActivity.this.startActivity(intent);
+
+            }
+        });
     }
 }
