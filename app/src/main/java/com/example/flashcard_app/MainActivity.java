@@ -98,10 +98,27 @@ public class MainActivity extends AppCompatActivity {
         addCardIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
-                MainActivity.this.startActivity(intent);
+                Intent addCard = new Intent(MainActivity.this, AddCardActivity.class);
+                //indicates that expect a result to be returned
+                MainActivity.this.startActivityForResult(addCard, 100);
 
             }
         });
+    }
+    //new method for getting the saved results
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // this 100 needs to match the 100 used when calling startActivityForResult!
+        //also needs to match result_ok initialized in the addcardactivity
+        if (requestCode == 100 && data !=null) {
+            //get the data that was saved
+            String question1 = data.getExtras().getString("question1");
+            String answer1 = data.getExtras().getString("answer1");
+            ((TextView) findViewById(R.id.flashcard_question)).setText(question1);
+            ((TextView) findViewById(R.id.flashcard_answer)).setText(answer1);
+            ((TextView) findViewById(R.id.first_answer)).setVisibility(View.INVISIBLE);
+            ((TextView) findViewById(R.id.second_answer)).setVisibility(View.INVISIBLE);
+            ((TextView) findViewById(R.id.third_answer)).setVisibility(View.INVISIBLE);
+        }
     }
 }
