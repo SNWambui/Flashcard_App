@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:text="When did the Big Bang happen?"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:gravity="center"
         android:background="@drawable/card_background"
         android:textColor="@color/black"/>
@@ -24,7 +24,7 @@
         android:text="13 billion years ago"
         android:visibility="invisible"
         android:gravity="center"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:background="#8033FF"
         android:textColor="@color/white"/>
 
@@ -36,7 +36,7 @@
         android:gravity="center"
         android:layout_below="@id/flashcard_question"
         android:layout_margin="10dp"
-        android:textSize="35sp"
+        android:textSize="25sp"
         android:padding="25dp"
         android:background="#FF9F33"
         android:textColor="@color/black"/>
@@ -49,7 +49,7 @@
         android:gravity="center"
         android:layout_below="@id/first_answer"
         android:layout_margin="10dp"
-        android:textSize="35sp"
+        android:textSize="25sp"
         android:padding="25dp"
         android:background="#FF9F33"
         android:textColor="@color/black"/>
@@ -61,7 +61,7 @@
         android:gravity="center"
         android:layout_below="@id/second_answer"
         android:layout_margin="10dp"
-        android:textSize="35sp"
+        android:textSize="25sp"
         android:padding="25dp"
         android:background="#FF9F33"
         android:textColor="@color/black"/>
@@ -87,5 +87,33 @@
         android:src="@drawable/add_icon"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/edit_card_btn"
+        android:src="@drawable/edit_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/next_btn"
+        android:src="@drawable/next_icon"
+        android:layout_below="@+id/third_answer"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/delete_btn"
+        android:src="@drawable/delete_icon"
+        android:layout_below="@+id/third_answer"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
         android:gravity="center"/>
 </RelativeLayout>

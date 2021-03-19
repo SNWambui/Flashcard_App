@@ -8,12 +8,13 @@
     tools:context=".AddCardActivity">
 
     <ImageView
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:id="@+id/cancel_button"
-    android:src="@drawable/cancel_icon"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentRight="true"/>
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/cancel_button"
+        android:src="@drawable/cancel_icon"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -37,12 +38,39 @@
         android:inputType="textMultiLine"
         android:textColor="@color/black"/>
 
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_below="@id/editAnswerField"
+        android:id="@+id/editAnswer2Field"
+        android:gravity="center"
+        android:hint="Enter Wrong Answer 1 Here"
+        android:textColorHint="#808080"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_below="@id/editAnswer2Field"
+        android:id="@+id/editAnswer3Field"
+        android:gravity="center"
+        android:hint="Enter Wrong Answer 2 Here"
+        android:textColorHint="#808080"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"/>
+
+
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/save_button"
         android:src="@drawable/save_icon"
         android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
         android:layout_alignParentLeft="true"/>
 
 </RelativeLayout>
