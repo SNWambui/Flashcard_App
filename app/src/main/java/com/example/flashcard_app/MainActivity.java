@@ -207,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //if the current index is greater than one (there's data), reduce the index and
                 //set the card to the previous question and answers
-                if (currentCardDisplayedIndex >0){
+                if (allFlashcards.size() >0){
                     currentCardDisplayedIndex --;
 
                     //get the index of the previous flashcard

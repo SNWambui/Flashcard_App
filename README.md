@@ -1,5 +1,25 @@
 # Flashcard App
 
+## Lab 3
+
+### App Description
+This is an flashcard app with questions and an answer meant to help students remember content taught in class
+
+### App Walk-though
+
+<img src="YOUR_GIF_URL_HERE" width=200><br>
+
+
+## Required
+- [x] User can create a card and still see their created card when the app is relaunched.
+- [x] User can create multiple cards and browse through all created cards
+
+## Optional
+- [x] User can delete a card and no longer see it in their deck anymore
+- [ ] Flashcards are shown in random order instead of the order they were created in
+- [ ] User can edit a card and see the edit saved when they browse through their deck of cards
+- [x] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
+
 ## Lab 2
 
 ### App Description
@@ -17,10 +37,10 @@ This is an flashcard app with questions and an answer meant to help students rem
 - [x] Push your progress to GitHub!
 
 ## Optional
-- [ ] User can edit a card
+- [x] User can edit a card
 - [ ] An error message is shown if the user doesn't enter both a Question and an Answer
-- [ ] A notification is shown if the card was created successfully
-- [ ] User can also enter multiple choice answers when creating a card
+- [x] A notification is shown if the card was created successfully
+- [x] User can also enter multiple choice answers when creating a card
 - [ ] App is further styled and customized!
 ## Lab 1
 
