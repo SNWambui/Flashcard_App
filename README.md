@@ -6,10 +6,11 @@
 This is an flashcard app with questions and an answer meant to help students remember content taught in class
 
 ### App Walk-though
-
+#### Part1
 <img src="Lab3_Flashcardv1.gif" width=200><br>
 
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
+#### Part2
+<img src="Lab3_Flashcardv1b.gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
