@@ -6,9 +6,11 @@
 This is an flashcard app with questions and an answer meant to help students remember content taught in class
 
 ### App Walk-though
+#### Part1
+<img src="Lab3_Flashcardv1.gif" width=200><br>
 
-<img src="YOUR_GIF_URL_HERE" width=200><br>
-
+#### Part2
+<img src="Lab3_Flashcardv1b.gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
@@ -41,7 +43,7 @@ This is an flashcard app with questions and an answer meant to help students rem
 - [ ] An error message is shown if the user doesn't enter both a Question and an Answer
 - [x] A notification is shown if the card was created successfully
 - [x] User can also enter multiple choice answers when creating a card
-- [ ] App is further styled and customized!
+- [x] App is further styled and customized!
 ## Lab 1
 
 ### App Description
