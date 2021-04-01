@@ -7,7 +7,7 @@
 This is an flashcard app with questions and an answer meant to help students remember content taught in class
 
 ### App Walk-though
-<img src="Lab3_Flashcardv1.gif" width=200><br>
+<img src="Lab4_Flashcardv1.gif" width=200><br>
 
 
 ## Required
