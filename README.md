@@ -1,5 +1,6 @@
 # Flashcard App
 - To run the app, download the flashcard_app.apk file
+- Ensure you have enabled the “Allow unknown sources” option in the settings of the device where you want to install the APK.
 
 ## App Description
 This is an flashcard app with questions and an answer meant to help:
