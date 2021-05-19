@@ -4,7 +4,9 @@
 ## Lab 4
 
 ### App Description
-This is an flashcard app with questions and an answer meant to help students remember content taught in class
+This is an flashcard app with questions and an answer meant to help:
+- students remember content taught in class.
+- Anyone who is learning something new and wants to use flashcards to remember what they are learning
 
 ### App Walk-though
 <img src="Lab4_Flashcardv1.gif" width=200><br>
