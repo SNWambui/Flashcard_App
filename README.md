@@ -1,12 +1,12 @@
 # Flashcard App
+- To run the app, download the flashcard_app.apk file
 
-
-## Lab 4
-
-### App Description
+## App Description
 This is an flashcard app with questions and an answer meant to help:
 - students remember content taught in class.
 - Anyone who is learning something new and wants to use flashcards to remember what they are learning
+
+## Lab 4
 
 ### App Walk-though
 <img src="Lab4_Flashcardv1.gif" width=200><br>
